@@ -13,7 +13,12 @@ export default function App() {
       <StatusBar style="auto" />
     </View>
     <View style={styles.container3}>
-      <Text>Section 2</Text>
+
+    <View style={styles.subcontainer3}/>
+    <Text style={styles.subcontainter3}>Halfs</Text>
+    <View style={styles.subcontainer3b}/>
+    <Text style={styles.subcontainer3b}>Halfs</Text>
+
       <StatusBar style="auto" />
     </View>
     <View style={styles.container4}>
@@ -25,6 +30,10 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  totalcontainer: { height: '100%', width: '100%' },
+
+  container: { flex: 1, flexDirection: 'row' },
+  
   container: {
     flex: 1,
     backgroundColor: 'red',
@@ -33,17 +42,26 @@ const styles = StyleSheet.create({
   },
   container2: {
     flex: 5,
-    backgroundColor: 'blue',
+    backgroundColor: 'green',
     alignItems: 'center',
     justifyContent: 'center',
     width: "100%",
   },
   container3: {
     flex: 5,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: "100%"
+    backgroundColor: 'pink',
+    flexDirection: 'row'
+  },
+  subcontainer3: {
+    flex: 5,
+    backgroundColor: 'powderblue',
+    flexDirection: 'row',
+    textAlign: 'center'
+  },
+  subcontainer3b: {
+    flex: 4,
+    backgroundColor: 'pink',
+    flexDirection: 'row'
   },
   container4: {
     flex: .8,
